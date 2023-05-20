@@ -6,10 +6,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            //PerformanceUtils.Measure(() =>
-            //{
-                _00589_Factorial();
-            //});
+            _00616_TavanDo();
         }
 
         public static int Factorial(int input)
@@ -31,6 +28,19 @@ namespace Quera
             {
                 int input = int.Parse(str);
                 Console.WriteLine(Factorial(input));
+            }
+        }
+
+        public static void _00616_TavanDo()
+        {
+            //https://docs.google.com/document/d/1kcwlIamCsdGc4-HjS2nbYB1JtxlVVm9trfxzVWm-Fns/edit#heading=h.4prh5tu56954
+            string? str = Console.ReadLine();
+            if (!string.IsNullOrEmpty(str))
+            {
+                int input = int.Parse(str);
+                string inputBinary = Convert.ToString(input, 2);
+                string outputBinary = '1' + new string('0', inputBinary.Length);
+                Console.WriteLine(Convert.ToInt32(outputBinary, 2));
             }
         }
 
@@ -80,6 +90,15 @@ namespace Quera
                     Console.Write("o");
                 }
                 Console.Write("w!");
+            }
+        }
+
+        public static void _09774_AdadChapKon()
+        {
+            string? str = Console.ReadLine();
+            if (!string.IsNullOrEmpty(str))
+            {
+                //...
             }
         }
 

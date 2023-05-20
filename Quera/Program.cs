@@ -6,7 +6,10 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //PerformanceUtils.Measure(() =>
+            //{
+                _00589_Factorial();
+            //});
         }
 
         public static int Factorial(int input)

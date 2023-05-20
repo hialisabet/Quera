@@ -7,6 +7,9 @@ namespace Quera
         static void Main(string[] args)
         {
             _00616_TavanDo();
+            //PerformanceUtils.Measure(() =>
+            //{
+            //});          
         }
 
         public static int Factorial(int input)

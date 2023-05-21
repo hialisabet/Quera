@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Quera
 {
@@ -6,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _00616_TavanDo();
+            _03405_ChapBarAx();
             //PerformanceUtils.Measure(() =>
             //{
             //});          
@@ -48,6 +49,24 @@ namespace Quera
             for (int i = 0; i < input; i++)
             {
                 Console.WriteLine("man khoshghlab hastam");
+            }
+        }
+
+        public static void _03405_ChapBarAx()
+        {
+            List<int> numbers = new List<int>();
+
+            // Read numbers until 0 is encountered
+            int number;
+            while ((number = Convert.ToInt32(Console.ReadLine())) != 0)
+            {
+                numbers.Add(number);
+            }
+
+            // Print the numbers in reverse order
+            for (int i = numbers.Count - 1; i >= 0; i--)
+            {
+                Console.WriteLine(numbers[i]);
             }
         }
 

@@ -7,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _03405_ChapBarAx();
+            _04065_KharDarChamanFaravooneh();
             //PerformanceUtils.Measure(() =>
             //{
             //});          
@@ -23,6 +23,25 @@ namespace Quera
             {
                 return input * Factorial(input - 1);
             }
+        }
+
+        public static void _00280_AdadeFisaghoresi()
+        {
+
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+
+            if (Math.Pow(a, 2) == Math.Pow(b, 2) + Math.Pow(c, 2) ||
+                Math.Pow(b, 2) == Math.Pow(a, 2) + Math.Pow(c, 2) ||
+                Math.Pow(c, 2) == Math.Pow(a, 2) + Math.Pow(b, 2))
+            {
+                Console.WriteLine("Yes");
+            } else
+            {
+                Console.WriteLine("No");
+            }
+
         }
 
         public static void _00589_Factorial()
@@ -98,6 +117,21 @@ namespace Quera
                 Console.Write("o");
             }
             Console.Write("w!");
+        }
+
+        public static void _04065_KharDarChamanFaravooneh()
+        {
+            string[] str = Console.ReadLine().Split();
+            int a = int.Parse(str[0]);
+            int b = int.Parse(str[1]);
+            int l = int.Parse(str[2]);
+            if (l % 2 == 0)
+            {
+                Console.WriteLine((a+b)*(l/2));
+            } else
+            {
+                Console.WriteLine((a+b)*((l-1)/2) + a);
+            }
         }
 
         public static void _09774_AdadChapKon()

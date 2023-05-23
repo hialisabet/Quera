@@ -7,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _04065_KharDarChamanFaravooneh();
+            _00591_CahpeMorabba();
             //PerformanceUtils.Measure(() =>
             //{
             //});          
@@ -49,6 +49,22 @@ namespace Quera
             string str = Console.ReadLine();
             int input = int.Parse(str);
             Console.WriteLine(Factorial(input));
+        }
+
+        public static void _00591_CahpeMorabba()
+        {
+            string str = Console.ReadLine();
+            int input = int.Parse(str);
+            for (int i = 0; i < input; i++)
+            {
+                if (i == 0 || i == input - 1)
+                {
+                    Console.WriteLine(new string('*', input));
+                } else
+                {
+                    Console.WriteLine('*' + new string(' ', input - 2) + '*');
+                }
+            }
         }
 
         public static void _00616_TavanDo()

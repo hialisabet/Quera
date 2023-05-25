@@ -7,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _20256_RejimeSakht();     
+            _08838_KomakBeCopy();     
         }
 
         public static int Factorial(int input)
@@ -155,6 +155,30 @@ namespace Quera
             } else
             {
                 Console.WriteLine((a+b)*((l-1)/2) + a);
+            }
+        }
+
+        public static void _08838_KomakBeCopy()
+        {
+            string[] str = Console.ReadLine().Split();
+            int n = int.Parse(str[0]);
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("copy of ");
+            }
+            Console.Write(str[1]);
+        }
+
+        public static void _10162_RoozeAzadiBayanDarBarareh()
+        {
+            string str = Console.ReadLine();
+            int input = int.Parse(str);
+            if (input % 2 == 0)
+            {
+                Console.WriteLine("Bala Barare");
+            } else
+            {
+                Console.WriteLine("Payin Barare");
             }
         }
 

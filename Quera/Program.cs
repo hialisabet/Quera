@@ -7,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _02659_TesteBinaei();     
+            _20256_RejimeSakht();     
         }
 
         public static int Factorial(int input)
@@ -155,6 +155,34 @@ namespace Quera
             } else
             {
                 Console.WriteLine((a+b)*((l-1)/2) + a);
+            }
+        }
+
+        public static void _20256_RejimeSakht()
+        {
+            string str = Console.ReadLine();
+            int red = 0;
+            int yellow = 0;
+            int green = 0;
+            foreach (char c in str)
+            {
+                if (c == 'G')
+                {
+                    green++;
+                } else if (c == 'R')
+                {
+                    red++;
+                } else if (c == 'Y')
+                {
+                    yellow++;
+                }
+            }
+            if (red >= 3 || (red >= 2 && yellow >=2) || green == 0)
+            {
+                Console.WriteLine("nakhor lite");
+            } else
+            {
+                Console.WriteLine("rahat baash");
             }
         }
 

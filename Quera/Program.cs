@@ -7,10 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _00591_CahpeMorabba();
-            //PerformanceUtils.Measure(() =>
-            //{
-            //});          
+            _02659_TesteBinaei();     
         }
 
         public static int Factorial(int input)
@@ -27,7 +24,6 @@ namespace Quera
 
         public static void _00280_AdadeFisaghoresi()
         {
-
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
             int c = int.Parse(Console.ReadLine());
@@ -41,7 +37,6 @@ namespace Quera
             {
                 Console.WriteLine("No");
             }
-
         }
 
         public static void _00589_Factorial()
@@ -69,12 +64,27 @@ namespace Quera
 
         public static void _00616_TavanDo()
         {
-            //https://docs.google.com/document/d/1kcwlIamCsdGc4-HjS2nbYB1JtxlVVm9trfxzVWm-Fns/edit#heading=h.4prh5tu56954
             string str = Console.ReadLine();
             int input = int.Parse(str);
             string inputBinary = Convert.ToString(input, 2);
             string outputBinary = '1' + new string('0', inputBinary.Length);
             Console.WriteLine(Convert.ToInt32(outputBinary, 2));
+        }
+
+        public static void _02659_TesteBinaei()
+        {
+            int n = int.Parse(Console.ReadLine());
+            string first = Console.ReadLine();
+            string second = Console.ReadLine();
+            int blindness = 0;
+            for (int i = 0; i < n; i++)
+            {
+                if (first[i] != second[i])
+                {
+                    blindness++;
+                }
+            }
+            Console.WriteLine(blindness);
         }
 
         public static void _02885_YekSoaleSade()
@@ -91,14 +101,12 @@ namespace Quera
         {
             List<int> numbers = new List<int>();
 
-            // Read numbers until 0 is encountered
             int number;
             while ((number = Convert.ToInt32(Console.ReadLine())) != 0)
             {
                 numbers.Add(number);
             }
 
-            // Print the numbers in reverse order
             for (int i = numbers.Count - 1; i >= 0; i--)
             {
                 Console.WriteLine(numbers[i]);
@@ -148,12 +156,6 @@ namespace Quera
             {
                 Console.WriteLine((a+b)*((l-1)/2) + a);
             }
-        }
-
-        public static void _09774_AdadChapKon()
-        {
-            string str = Console.ReadLine();
-            //...
         }
 
     }

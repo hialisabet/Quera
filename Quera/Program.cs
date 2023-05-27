@@ -7,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _08838_KomakBeCopy();     
+            //var summary = BenchmarkRunner.Run<Benchmark>();
         }
 
         public static int Factorial(int input)

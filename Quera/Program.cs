@@ -7,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            //var summary = BenchmarkRunner.Run<Benchmark>();
+            _03408_SoaleBarnamenevisiBarnamenevisiSoal();
         }
 
         public static int Factorial(int input)
@@ -110,6 +110,17 @@ namespace Quera
             for (int i = numbers.Count - 1; i >= 0; i--)
             {
                 Console.WriteLine(numbers[i]);
+            }
+        }
+
+        public static void _03408_SoaleBarnamenevisiBarnamenevisiSoal()
+        {
+            string str = Console.ReadLine();
+            int n = int.Parse(str);
+            string[] sentence = Console.ReadLine().Split();
+            for (int i = sentence.Length - 1; i >= 0; i--)
+            {
+                Console.Write(sentence[i] + ' ');
             }
         }
 

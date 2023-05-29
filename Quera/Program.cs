@@ -7,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _00649_AvalBini();
+            _03414_DoNoghtehKhat();
         }
 
         public static bool IsPrime(int number)
@@ -118,6 +118,22 @@ namespace Quera
 
         }
 
+        public static void _02636_ShatranjHerfei()
+        {
+            string[] str = Console.ReadLine().Split();
+            int[] result = new int[str.Length];
+            result[0] = 1 - int.Parse(str[0]);
+            result[1] = 1 - int.Parse(str[1]);
+            result[2] = 2 - int.Parse(str[2]);
+            result[3] = 2 - int.Parse(str[3]);
+            result[4] = 2 - int.Parse(str[4]);
+            result[5] = 8 - int.Parse(str[5]);
+            for (int i = 0; i < result.Length; i++)
+            {
+                Console.Write(result[i] + ' ');
+            }
+        }
+
         public static void _02659_TesteBinaei()
         {
             int n = int.Parse(Console.ReadLine());
@@ -168,6 +184,27 @@ namespace Quera
             for (int i = sentence.Length - 1; i >= 0; i--)
             {
                 Console.Write(sentence[i] + ' ');
+            }
+        }
+
+        public static void _03414_DoNoghtehKhat()
+        {
+            string[] str = Console.ReadLine().Split();
+            int mRow = int.Parse(str[0]);
+            int mColumn = int.Parse(str[1]);
+            int rRow = int.Parse(str[2]);
+            int rColumn = int.Parse(str[3]);
+            if (mRow == rRow)
+            {
+                Console.WriteLine("Vertical");
+            }
+            else if (mColumn == rColumn)
+            {
+                Console.WriteLine("Horizontal");
+            }
+            else
+            {
+                Console.WriteLine("Try again");
             }
         }
 
@@ -239,6 +276,21 @@ namespace Quera
             else
             {
                 Console.WriteLine("Payin Barare");
+            }
+        }
+
+        public static void _10325_HamayeshZendegiBehtar()
+        {
+            string[] str = Console.ReadLine().Split();
+            int row = int.Parse(str[0]);
+            int chair = int.Parse(str[1]);
+            if (chair <= 10)
+            {
+                Console.Write("Right " + (11 -  row) + " " + chair);
+            }
+            else
+            {
+                Console.Write("Left " + (11 - row) + " " + (21 - chair));
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Quera
 {
@@ -7,7 +8,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _03414_DoNoghtehKhat();
+            _03409_JadvalZarbGondeh();
         }
 
         public static bool IsPrime(int number)
@@ -43,6 +44,28 @@ namespace Quera
             }
         }
 
+        public static List<int> FindDivisors(int number)
+        {
+            List<int> divisors = new List<int>();
+            int sqrt = (int)Math.Sqrt(number);
+
+            for (int i = 1; i <= sqrt; i++)
+            {
+                if (number % i == 0)
+                {
+                    divisors.Add(i);
+                    int quotient = number / i;
+                    if (quotient != i)
+                    {
+                        divisors.Add(quotient);
+                    }
+                }
+            }
+
+            divisors.Sort();
+            return divisors;
+        }
+
         public static void _00280_AdadeFisaghoresi()
         {
             int a = int.Parse(Console.ReadLine());
@@ -61,17 +84,35 @@ namespace Quera
             }
         }
 
-        public static void _00589_Factorial()
+        public static void _00282_KamelBoodanYaNaboodan()
         {
-            string str = Console.ReadLine();
-            int input = int.Parse(str);
-            Console.WriteLine(Factorial(input));
+            int n = int.Parse(Console.ReadLine());
+            List<int> divisors = FindDivisors(n);
+            divisors.RemoveAt(divisors.Count - 1);
+            int sumOfDivs = 0;
+            foreach (int i in divisors)
+            {
+                sumOfDivs += i;
+            }
+            if (sumOfDivs == n)
+            {
+                Console.WriteLine("YES");
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
         }
 
-        public static void _00591_CahpeMorabba()
+        public static void _00589_Factorial()
         {
-            string str = Console.ReadLine();
-            int input = int.Parse(str);
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(Factorial(n));
+        }
+
+        public static void _00591_ChapeMorabba()
+        {
+            int input = int.Parse(Console.ReadLine());
             for (int i = 0; i < input; i++)
             {
                 if (i == 0 || i == input - 1)
@@ -87,8 +128,7 @@ namespace Quera
 
         public static void _00616_TavanDo()
         {
-            string str = Console.ReadLine();
-            int input = int.Parse(str);
+            int input = int.Parse(Console.ReadLine());
             string inputBinary = Convert.ToString(input, 2);
             string outputBinary = '1' + new string('0', inputBinary.Length);
             Console.WriteLine(Convert.ToInt32(outputBinary, 2));
@@ -152,8 +192,7 @@ namespace Quera
 
         public static void _02885_YekSoaleSade()
         {
-            string str = Console.ReadLine();
-            int input = int.Parse(str);
+            int input = int.Parse(Console.ReadLine());
             for (int i = 0; i < input; i++)
             {
                 Console.WriteLine("man khoshghlab hastam");
@@ -178,12 +217,23 @@ namespace Quera
 
         public static void _03408_SoaleBarnamenevisiBarnamenevisiSoal()
         {
-            string str = Console.ReadLine();
-            int n = int.Parse(str);
             string[] sentence = Console.ReadLine().Split();
             for (int i = sentence.Length - 1; i >= 0; i--)
             {
                 Console.Write(sentence[i] + ' ');
+            }
+        }
+
+        public static void _03409_JadvalZarbGondeh()
+        {
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    Console.Write(i * j + " ");
+                }
+                Console.WriteLine();
             }
         }
 
@@ -210,8 +260,7 @@ namespace Quera
 
         public static void _03429_Yakhdarchi()
         {
-            string str = Console.ReadLine();
-            int input = int.Parse(str);
+            int input = int.Parse(Console.ReadLine());
             if (input > 100)
             {
                 Console.WriteLine("Steam");
@@ -228,8 +277,7 @@ namespace Quera
 
         public static void _03537_SoaleZard()
         {
-            string str = Console.ReadLine();
-            int input = int.Parse(str);
+            int input = int.Parse(Console.ReadLine());
             Console.Write("W");
             for (int i = 0; i < input; i++)
             {
@@ -265,10 +313,14 @@ namespace Quera
             Console.Write(str[1]);
         }
 
+        public static void _09774_AdadChapKon()
+        {
+
+        }
+
         public static void _10162_RoozeAzadiBayanDarBarareh()
         {
-            string str = Console.ReadLine();
-            int input = int.Parse(str);
+            int input = int.Parse(Console.ReadLine());
             if (input % 2 == 0)
             {
                 Console.WriteLine("Bala Barare");
@@ -286,7 +338,7 @@ namespace Quera
             int chair = int.Parse(str[1]);
             if (chair <= 10)
             {
-                Console.Write("Right " + (11 -  row) + " " + chair);
+                Console.Write("Right " + (11 - row) + " " + chair);
             }
             else
             {

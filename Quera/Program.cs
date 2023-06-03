@@ -8,7 +8,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _03403_Sadetar();
+            _06082_AsemanShekarAbad();
         }
 
         public static bool IsPrime(int number)
@@ -376,6 +376,26 @@ namespace Quera
             {
                 Console.WriteLine((a + b) * ((l - 1) / 2) + a);
             }
+        }
+
+        public static void _06082_AsemanShekarAbad()
+        {
+            string[] str = Console.ReadLine().Split();
+            int row = int.Parse(str[0]);
+            //int col = int.Parse(str[1]);
+            int count = 0;
+            for (int i = 0; i < row; i++)
+            {
+                string s = Console.ReadLine();
+                for (int j = 0; j < s.Length; j++)
+                {
+                    if (s[j] == '*')
+                    {
+                        count++;
+                    }
+                }
+            }
+            Console.WriteLine(count);
         }
 
         public static void _08838_KomakBeCopy()

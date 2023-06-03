@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 
 namespace Quera
 {
@@ -8,7 +7,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _00615_TarikhTavalod();
+            _03404_ToCheghadrEzafeVaznDari();
         }
 
         public static bool IsPrime(int number)
@@ -227,7 +226,34 @@ namespace Quera
 
         public static void _03404_ToCheghadrEzafeVaznDari()
         {
+            float w = float.Parse(Console.ReadLine());
+            float h = float.Parse(Console.ReadLine());
+            float bmi = w / (h * h);
 
+            Console.WriteLine(bmi.ToString("####0.00"));
+            Console.WriteLine(bmi.ToString("0.00"));
+            Console.WriteLine(bmi.ToString("F2"));
+            Console.WriteLine(bmi.ToString("N2"));
+            Console.WriteLine(Math.Round(bmi, 2));
+            Console.WriteLine(string.Format("{0:0.00}", bmi));
+            Console.WriteLine(string.Format("{0:#.##}", bmi));
+            Console.WriteLine(string.Format("{0:F2}", bmi));
+            Console.WriteLine(string.Format("{0:N2}", bmi));
+
+            if (bmi < 18.5)
+            {
+                Console.WriteLine("Underweight");
+            } else if (bmi >= 18.5 && bmi < 25)
+            {
+                Console.WriteLine("Normal");
+            } else if (bmi >= 25 && bmi < 30)
+            {
+                Console.WriteLine("Overweight");
+            } else if ((bmi >= 30))
+            {
+                Console.WriteLine("Obese");
+            }
+            
         }
 
         public static void _03405_ChapBarAx()

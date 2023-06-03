@@ -234,9 +234,7 @@ namespace Quera
             Console.WriteLine(bmi.ToString("0.00"));
             Console.WriteLine(bmi.ToString("F2"));
             Console.WriteLine(bmi.ToString("N2"));
-            Console.WriteLine(Math.Round(bmi, 2));
             Console.WriteLine(string.Format("{0:0.00}", bmi));
-            Console.WriteLine(string.Format("{0:#.##}", bmi));
             Console.WriteLine(string.Format("{0:F2}", bmi));
             Console.WriteLine(string.Format("{0:N2}", bmi));
 

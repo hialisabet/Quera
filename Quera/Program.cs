@@ -382,7 +382,6 @@ namespace Quera
         {
             string[] str = Console.ReadLine().Split();
             int row = int.Parse(str[0]);
-            //int col = int.Parse(str[1]);
             int count = 0;
             for (int i = 0; i < row; i++)
             {

@@ -148,8 +148,8 @@ namespace Quera
             string saal = str.Substring(0, 2);
             // start from index 2, and get 2 chars
             string maah = str.Substring(2, 2);
-            Console.WriteLine("saal : " + saal);
-            Console.WriteLine("maah : " + maah);
+            Console.WriteLine("saal:" + saal);
+            Console.WriteLine("maah:" + maah);
         }
 
         public static void _00616_TavanDo()

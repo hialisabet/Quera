@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Quera
 {
@@ -7,7 +8,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _03404_ToCheghadrEzafeVaznDari();
+            _03403_Sadetar();
         }
 
         public static bool IsPrime(int number)
@@ -224,6 +225,26 @@ namespace Quera
             }
         }
 
+        public static void _03403_Sadetar()
+        {
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            int d = int.Parse(Console.ReadLine());
+            int sum = a + b + c + d;
+            float avg = (float) sum / 4;
+            int product = a * b * c * d;
+            int max = new[] { a, b, c, d }.Max();
+            int min = new[] { a, b, c, d }.Min();
+            Console.WriteLine("Sum : " + sum.ToString("####0.000000"));
+            Console.WriteLine("Average : " + avg.ToString("####0.000000"));
+            Console.WriteLine("Product : " + product.ToString("####0.000000"));
+            // Find Max of more than 2 numbers
+            Console.WriteLine("MAX : " + max.ToString("####0.000000"));
+            // Find Min of more than 2 numbers
+            Console.WriteLine("MIN : " + min.ToString("####0.000000"));
+        }
+
         public static void _03404_ToCheghadrEzafeVaznDari()
         {
             float w = float.Parse(Console.ReadLine());
@@ -231,12 +252,12 @@ namespace Quera
             float bmi = w / (h * h);
 
             Console.WriteLine(bmi.ToString("####0.00"));
-            Console.WriteLine(bmi.ToString("0.00"));
-            Console.WriteLine(bmi.ToString("F2"));
-            Console.WriteLine(bmi.ToString("N2"));
-            Console.WriteLine(string.Format("{0:0.00}", bmi));
-            Console.WriteLine(string.Format("{0:F2}", bmi));
-            Console.WriteLine(string.Format("{0:N2}", bmi));
+            //Console.WriteLine(bmi.ToString("0.00"));
+            //Console.WriteLine(bmi.ToString("F2"));
+            //Console.WriteLine(bmi.ToString("N2"));
+            //Console.WriteLine(string.Format("{0:0.00}", bmi));
+            //Console.WriteLine(string.Format("{0:F2}", bmi));
+            //Console.WriteLine(string.Format("{0:N2}", bmi));
 
             if (bmi < 18.5)
             {

@@ -8,7 +8,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _00588_Maximum();
+            _00615_TarikhTavalod();
         }
 
         public static bool IsPrime(int number)
@@ -143,7 +143,13 @@ namespace Quera
 
         public static void _00615_TarikhTavalod()
         {
-
+            string str = Console.ReadLine();
+            // start from index 0, and get 2 chars
+            string saal = str.Substring(0, 2);
+            // start from index 2, and get 2 chars
+            string maah = str.Substring(2, 2);
+            Console.WriteLine("saal: " + saal);
+            Console.WriteLine("maah: " + maah);
         }
 
         public static void _00616_TavanDo()

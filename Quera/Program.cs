@@ -8,7 +8,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _03409_JadvalZarbGondeh();
+            _00588_Maximum();
         }
 
         public static bool IsPrime(int number)
@@ -104,6 +104,21 @@ namespace Quera
             }
         }
 
+        public static void _00588_Maximum()
+        {
+            int n = int.Parse(Console.ReadLine());
+            string[] str = Console.ReadLine().Split();
+            int max = int.Parse(str[0]);
+            for (int i = 1; i < str.Length; i++)
+            {
+                if (int.Parse(str[i]) > max)
+                {
+                    max = int.Parse(str[i]);
+                }
+            }
+            Console.WriteLine(max);
+        }
+
         public static void _00589_Factorial()
         {
             int n = int.Parse(Console.ReadLine());
@@ -124,6 +139,11 @@ namespace Quera
                     Console.WriteLine('*' + new string(' ', input - 2) + '*');
                 }
             }
+        }
+
+        public static void _00615_TarikhTavalod()
+        {
+
         }
 
         public static void _00616_TavanDo()
@@ -197,6 +217,11 @@ namespace Quera
             {
                 Console.WriteLine("man khoshghlab hastam");
             }
+        }
+
+        public static void _03404_ToCheghadrEzafeVaznDari()
+        {
+
         }
 
         public static void _03405_ChapBarAx()
@@ -346,6 +371,11 @@ namespace Quera
             }
         }
 
+        public static void _17675_ReshtehFibonacci()
+        {
+
+        }
+
         public static void _20256_RejimeSakht()
         {
             string str = Console.ReadLine();
@@ -375,6 +405,11 @@ namespace Quera
             {
                 Console.WriteLine("rahat baash");
             }
+        }
+
+        public static void _31025_SabaVaSoaleSade()
+        {
+            
         }
 
         public static void _51865_BehdashtVaSalamat()

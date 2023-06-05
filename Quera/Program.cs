@@ -8,7 +8,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _06082_AsemanShekarAbad();
+            _108665_KalamehKalameh();
         }
 
         public static bool IsPrime(int number)
@@ -66,7 +66,7 @@ namespace Quera
             return divisors;
         }
 
-        public static void _00280_AdadeFisaghoresi()
+        public static void _000280_AdadeFisaghoresi()
         {
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
@@ -84,7 +84,7 @@ namespace Quera
             }
         }
 
-        public static void _00282_KamelBoodanYaNaboodan()
+        public static void _000282_KamelBoodanYaNaboodan()
         {
             int n = int.Parse(Console.ReadLine());
             List<int> divisors = FindDivisors(n);
@@ -104,7 +104,7 @@ namespace Quera
             }
         }
 
-        public static void _00588_Maximum()
+        public static void _000588_Maximum()
         {
             int n = int.Parse(Console.ReadLine());
             string[] str = Console.ReadLine().Split();
@@ -119,13 +119,13 @@ namespace Quera
             Console.WriteLine(max);
         }
 
-        public static void _00589_Factorial()
+        public static void _000589_Factorial()
         {
             int n = int.Parse(Console.ReadLine());
             Console.WriteLine(Factorial(n));
         }
 
-        public static void _00591_ChapeMorabba()
+        public static void _000591_ChapeMorabba()
         {
             int input = int.Parse(Console.ReadLine());
             for (int i = 0; i < input; i++)
@@ -141,7 +141,7 @@ namespace Quera
             }
         }
 
-        public static void _00615_TarikhTavalod()
+        public static void _000615_TarikhTavalod()
         {
             string str = Console.ReadLine();
             // start from index 0, and get 2 chars
@@ -152,7 +152,7 @@ namespace Quera
             Console.WriteLine("maah:" + maah);
         }
 
-        public static void _00616_TavanDo()
+        public static void _000616_TavanDo()
         {
             int input = int.Parse(Console.ReadLine());
             string inputBinary = Convert.ToString(input, 2);
@@ -160,7 +160,7 @@ namespace Quera
             Console.WriteLine(Convert.ToInt32(outputBinary, 2));
         }
 
-        public static void _00649_AvalBini()
+        public static void _000649_AvalBini()
         {
             string strA = Console.ReadLine();
             int a = int.Parse(strA);
@@ -184,7 +184,7 @@ namespace Quera
 
         }
 
-        public static void _02636_ShatranjHerfei()
+        public static void _002636_ShatranjHerfei()
         {
             string[] str = Console.ReadLine().Split();
             int[] result = new int[str.Length];
@@ -200,7 +200,7 @@ namespace Quera
             }
         }
 
-        public static void _02659_TesteBinaei()
+        public static void _002659_TesteBinaei()
         {
             int n = int.Parse(Console.ReadLine());
             string first = Console.ReadLine();
@@ -216,7 +216,7 @@ namespace Quera
             Console.WriteLine(blindness);
         }
 
-        public static void _02885_YekSoaleSade()
+        public static void _002885_YekSoaleSade()
         {
             int input = int.Parse(Console.ReadLine());
             for (int i = 0; i < input; i++)
@@ -225,7 +225,7 @@ namespace Quera
             }
         }
 
-        public static void _03403_Sadetar()
+        public static void _003403_Sadetar()
         {
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
@@ -245,7 +245,7 @@ namespace Quera
             Console.WriteLine("MIN : " + min.ToString("####0.000000"));
         }
 
-        public static void _03404_ToCheghadrEzafeVaznDari()
+        public static void _003404_ToCheghadrEzafeVaznDari()
         {
             float w = float.Parse(Console.ReadLine());
             float h = float.Parse(Console.ReadLine());
@@ -275,7 +275,7 @@ namespace Quera
             
         }
 
-        public static void _03405_ChapBarAx()
+        public static void _003405_ChapBarAx()
         {
             List<int> numbers = new List<int>();
 
@@ -291,7 +291,7 @@ namespace Quera
             }
         }
 
-        public static void _03408_SoaleBarnamenevisiBarnamenevisiSoal()
+        public static void _003408_SoaleBarnamenevisiBarnamenevisiSoal()
         {
             string[] sentence = Console.ReadLine().Split();
             for (int i = sentence.Length - 1; i >= 0; i--)
@@ -300,7 +300,7 @@ namespace Quera
             }
         }
 
-        public static void _03409_JadvalZarbGondeh()
+        public static void _003409_JadvalZarbGondeh()
         {
             int n = int.Parse(Console.ReadLine());
             for (int i = 1; i <= n; i++)
@@ -313,7 +313,7 @@ namespace Quera
             }
         }
 
-        public static void _03414_DoNoghtehKhat()
+        public static void _003414_DoNoghtehKhat()
         {
             string[] str = Console.ReadLine().Split();
             int mRow = int.Parse(str[0]);
@@ -334,7 +334,7 @@ namespace Quera
             }
         }
 
-        public static void _03429_Yakhdarchi()
+        public static void _003429_Yakhdarchi()
         {
             int input = int.Parse(Console.ReadLine());
             if (input > 100)
@@ -351,7 +351,7 @@ namespace Quera
             }
         }
 
-        public static void _03537_SoaleZard()
+        public static void _003537_SoaleZard()
         {
             int input = int.Parse(Console.ReadLine());
             Console.Write("W");
@@ -362,7 +362,7 @@ namespace Quera
             Console.Write("w!");
         }
 
-        public static void _04065_KharDarChamanFaravooneh()
+        public static void _004065_KharDarChamanFaravooneh()
         {
             string[] str = Console.ReadLine().Split();
             int a = int.Parse(str[0]);
@@ -378,7 +378,7 @@ namespace Quera
             }
         }
 
-        public static void _06082_AsemanShekarAbad()
+        public static void _006082_AsemanShekarAbad()
         {
             string[] str = Console.ReadLine().Split();
             int row = int.Parse(str[0]);
@@ -397,7 +397,7 @@ namespace Quera
             Console.WriteLine(count);
         }
 
-        public static void _08838_KomakBeCopy()
+        public static void _008838_KomakBeCopy()
         {
             string[] str = Console.ReadLine().Split();
             int n = int.Parse(str[0]);
@@ -408,12 +408,12 @@ namespace Quera
             Console.Write(str[1]);
         }
 
-        public static void _09774_AdadChapKon()
+        public static void _009774_AdadChapKon()
         {
 
         }
 
-        public static void _10162_RoozeAzadiBayanDarBarareh()
+        public static void _010162_RoozeAzadiBayanDarBarareh()
         {
             int input = int.Parse(Console.ReadLine());
             if (input % 2 == 0)
@@ -426,7 +426,7 @@ namespace Quera
             }
         }
 
-        public static void _10325_HamayeshZendegiBehtar()
+        public static void _010325_HamayeshZendegiBehtar()
         {
             string[] str = Console.ReadLine().Split();
             int row = int.Parse(str[0]);
@@ -441,12 +441,12 @@ namespace Quera
             }
         }
 
-        public static void _17675_ReshtehFibonacci()
+        public static void _017675_ReshtehFibonacci()
         {
 
         }
 
-        public static void _20256_RejimeSakht()
+        public static void _020256_RejimeSakht()
         {
             string str = Console.ReadLine();
             int red = 0;
@@ -477,12 +477,12 @@ namespace Quera
             }
         }
 
-        public static void _31025_SabaVaSoaleSade()
+        public static void _031025_SabaVaSoaleSade()
         {
             
         }
 
-        public static void _51865_BehdashtVaSalamat()
+        public static void _051865_BehdashtVaSalamat()
         {
             string strX = Console.ReadLine();
             int x = int.Parse(strX);
@@ -501,6 +501,17 @@ namespace Quera
                 x = x - n;
                 Console.WriteLine((x < 0) ? 0 : x);
             }
+        }
+
+        public static void _108665_KalamehKalameh()
+        {
+            string str = Console.ReadLine();
+            int vowel = 0;
+            foreach (char c in str)
+            {
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') vowel++;
+            }
+            Console.WriteLine(Math.Pow(2, vowel));
         }
 
     }

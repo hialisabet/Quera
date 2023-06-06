@@ -509,8 +509,6 @@ namespace Quera
             int n = int.Parse(str[0]);
             float k = float.Parse(str[1]);
             float s = float.Parse(str[2]);
-            Console.WriteLine(k);
-            Console.WriteLine(s);
             if ((n * k) <= s)
             {
                 Console.WriteLine("Kafie!");

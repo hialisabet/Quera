@@ -8,7 +8,7 @@ namespace Quera
     {
         static void Main(string[] args)
         {
-            _108665_KalamehKalameh();
+            _072881_SoupSabzijat();
         }
 
         public static bool IsPrime(int number)
@@ -500,6 +500,23 @@ namespace Quera
             {
                 x = x - n;
                 Console.WriteLine((x < 0) ? 0 : x);
+            }
+        }
+
+        public static void _072881_SoupSabzijat()
+        {
+            string[] str = Console.ReadLine().Split();
+            int n = int.Parse(str[0]);
+            float k = float.Parse(str[1]);
+            float s = float.Parse(str[2]);
+            Console.WriteLine(k);
+            Console.WriteLine(s);
+            if ((n * k) <= s)
+            {
+                Console.WriteLine("Kafie!");
+            } else
+            {
+                Console.WriteLine("Na! yeki bayad bere sabzi bekhare");
             }
         }
 

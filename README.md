@@ -36,5 +36,5 @@ Please make sure to adhere to the existing coding style and include appropriate 
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE). Feel free to use the code provided here for your own projects.
+This project is licensed under the [GNU Affero General Public License](./LICENSE.txt). Feel free to use the code provided here for your own projects.
 
